@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Zorca Solutions es un sitio web informativo sobre mantenimientos de equipos de computo, tanto a nivel de hardware y software. Nuestra funcion es dar recomendaciones, instrucciones, sugerencias, notas, procedimientos y nuestro pundo de vista para realizar un buen mantenimiento a computadoras."
+      />
+      <link rel="preload" href="./assets/fonts/Posterema-2001-SemiBold/03d33d67fd07fb2d31001eb9f90d58bf.woff2" as="font" type="font/woff2" crossorigin />
+      <link rel="stylesheet" href="./assets/css/normalize.css" />
+      <link rel="stylesheet" href="./assets/css/animate.css" />
+      <link rel="stylesheet" href="./assets/css/hover.css" />
+      <link rel="stylesheet" href="./assets/bootstrap-5.1.3-dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="./assets/fonts/bootstrap-icons-1.9.0/bootstrap-icons.css" />
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <link rel="shortcut icon" href="./assets/img/logotipo.webp" type="image/x-icon" />
+      <title>Zorca Solutions</title>
+   </head>
+
+   <body>
+      
+    <!--Ventana Emergente-->
+      <div class="modal fade animate__animated animate__fadeIn animate__delay-3s" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-me">
+            <div class="modal-content bg-dark border shadow-lg rounded-3">
+               <div class="modal-header border-0">
+                  <button type="button" class="btn-close btn-close-white rounded-0" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <p class="h1 text-center text-light">Bienvenidos A Zorca Solutions</p>
+                  <p class="h3 text-center text-primary">Gracias Por Visitarnos</p>
+               </div>
+               <div class="modal-footer justify-content-center border-0">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--Barra De Navegacion-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+         <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.html">
+               <img src="./assets/img/logotipo.webp" alt="Logotipo" width="100px" height="50px" class="d-inline-block align-text-top shadow-lg-lg" />
+            </a>
+            <button
+               class="navbar-toggler animate__animated animate__fadeInRight"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse animate__animated animate__fadeInRight" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item active" aria-current="page">
+                     <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#conceptos-basicos">Conceptos Básicos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#mantenimiento-preventivo-de-hardware">Mantenimiento Preventivo De Hardware</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#mantenimiento-preventivo-de-software">Mantenimiento Preventivo De Software</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <!--Hero-->
+      <div class="container my-5 animate__animated animate__fadeInUp animate__delay-2s">
+         <div class="m-auto row py-4 align-items-center rounded-3 border shadow-lg bg-dark text-light">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+               <h1 class="display-4 fw-bold lh-1">Zorca Solutions</h1>
+               <p class="lead text-justify">
+                  En la Presente Pagina Web se encuentra información detallada y de interés sobre nuestro servicio de mantenimiento preventivo de hardware realizado en la Escuela Nacional la Providencia de la localidad de Zorca, de allí el
+                  nombre de la presente. Ademas nuestra pagina Web también cuenta con pautas a seguir, aclaraciones, tips, sugerencias e información respalda con contenido y fuentes de calidad sobre los diferentes aspectos del hardware y
+                  software como conceptos básicos y mantenimiento preventivo de los mismos.
+               </p>
+               <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                  <a class="raise1 button1" href="#video">Video</a>
+                  <a class="raise2 button2" href="#galeria">Galería</a>
+               </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+               <img class="rounded-lg-3" src="./assets/img/hero.webp" alt="Imagen Principal" width="720" />
+            </div>
+         </div>
+      </div>
+
+      <!--Video-->
+      <div class="container animate__animated animate__fadeInUp animate__delay-2s" id="video">
+         <h2 class="h2 text-center m-3 text-light" id="video">Nuestro Servicio De Mantenimiento Preventivo De Hardware A Las Pc De La Escuela Nacional La Providencia</h2>
+         <!-- <video
+                src="./assets/vid/video.mp4"
+                controls
+                muted
+                class="border ratio ratio-16x9 shadow-lg"
+            ></video> -->
+         <img src="./assets/img/noencontrada.webp" alt="" class="img-fluid w-100" />
+      </div>
+
+      <!--Contenedor Principal-->
+      <div class="container">
+         
+        <!--Acordion-->
+         <div class="accordion" id="accordionExample">
+            
+            <!--Conceptos Basicos-->
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="conceptos-basicos">
+                  <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     Conceptos Básicos
+                  </button>
+               </h2>
+               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     
+                     <!--Placa Madre-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ep-flex-lg-row-reverse">
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Qué Es Una Placa Madre</h2>
+                              <p class="lead text-justify">
+                                 La placa madre es una placa de circuito impreso principal de un computador, lo que significa que es la pieza principal de los circuitos a la que se conectan las demás piezas que crean el conjunto.La placa
+                                 madre es la columna vertebral que une los componentes del computador en un mismo punto y les permite comunicarse entre sí. Sin ella, ninguna de las piezas del computador, como el CPU, la GPU o el disco duro,
+                                 podrían interactuar. La funcionalidad total de la placa madre es necesaria para que un computador funcione bien. Si esta está dañada tendrás grandes problemas.
+                              </p>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                 <a href="https://www.hp.com/cl-es/shop/tech-takes/que-hace-la-placa-madre" target="_blank">Fuente: hp.com</a>
+                              </div>
+                           </div>
+                           <div class="col-10 col-sm-8 col-lg-6">
+                              <img src="./assets/img/placa-madre.webp" class="d-block mx-lg-auto img-fluid" alt="Placa Madre" width="700" height="500" loading="lazy" />
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Memoria Ram-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                           <div class="col-10 col-sm-8 col-lg-6">
+                              <img src="./assets/img/memoria-ram.webp" class="d-block mx-lg-auto img-fluid" alt="Memoria Ram" width="700" height="500" loading="lazy" />
+                           </div>
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Qué Es Una Memoria RAM</h2>
+                              <p class="lead text-justify">
+                                 Es la memoria principal de un dispositivo, esa donde se almacenan de forma temporal los datos de los programas que estás utilizando en este momento. Sus siglas significan Random Access Memory, lo que
+                                 traducido al español sería Memoria de Acceso Aleatorio, y es un tipo de memoria que te puedes encontrar en cualquier dispositivo, desde ordenadores de sobremesa hasta teléfonos móviles.
+                              </p>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                 <a href="https://www.xataka.com/basics/memoria-ram-que-sirve-como-mirar-cuanta-tiene-tu-ordenador-movil" target="_blank">Fuente: xataka.com</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Fuente De Poder-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ep-flex-lg-row-reverse">
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Qué Es Una Fuente De Poder</h2>
+                              <p class="lead text-justify">
+                                 Es un componente del computador que se encarga de transformar una corriente eléctrica alterna, en una corriente eléctrica continua transmitiendo la corriente eléctrica imprescindible y necesaria a los
+                                 ordenadores para el buen funcionamiento y protección de estos.Son conocidas dos tipos de fuentes de poder: La fuente de poder AT la cual posee 12 pines y fuente de poder ATX que posee 20 pines mas una
+                                 extensión de 4 pines.
+                              </p>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                 <a href="https://www.significados.com/fuente-de-poder/" target="_blank">Fuente: significados.com</a>
+                              </div>
+                           </div>
+                           <div class="col-10 col-sm-8 col-lg-6">
+                              <img src="./assets/img/fuente-de-poder.webp" class="d-block mx-lg-auto img-fluid" alt="Fuente De Poder" width="700" height="500" loading="lazy" />
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Disco Duro-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                           <div class="col-10 col-sm-8 col-lg-6">
+                              <img src="./assets/img/disco-duro.webp" class="d-block mx-lg-auto img-fluid" alt="Disco Duro" width="700" height="500" loading="lazy" />
+                           </div>
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Qué Es Un Disco Duro</h2>
+                              <p class="lead text-justify">
+                                 son dispositivos de almacenamiento de datos en los que podemos almacenar cualquier tipo de información digital. El disco duro es una de las partes más importantes de cualquier sistema informático. El tipo
+                                 más "tradicional" de disco duro es el HDD, el cual esta creado con componentes mecánicos y utiliza el magnetismo para grabar los datos mientras que su "alternativa" los discos duros SSD almacenan los datos
+                                 en microchips con memorias flash interconectadas entre sí.
+                              </p>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                 <a href="https://experience.dropbox.com/es-la/resources/what-is-a-hard-drive" target="_blank">Fuente: experience.dropbox.com</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Procesador-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ep-flex-lg-row-reverse">
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Qué Es El Procesador</h2>
+                              <p class="lead text-justify">
+                                 El CPU es el cerebro de un ordenador o computadora, está compuesto por un circuito integrado encapsulado en un chip de silicio que lo componen millones de transistores. Su función es procesar los datos,
+                                 controlar el funcionamiento de todos los dispositivos del ordenador, al menos de gran parte de ellos y lo más importante: se encarga de realizar las operaciones lógicas y matemáticas.
+                              </p>
+                              <a
+                                 tabindex="0"
+                                 class="btn btn-primary mb-3"
+                                 role="button"
+                                 data-bs-toggle="popover"
+                                 data-bs-placement="bottom"
+                                 data-bs-trigger="focus"
+                                 title="Aclaracion"
+                                 data-bs-content="El CPU es la Unidad Logica de Procesamiento mientras que el Chasis es el que contiene todos los componentes del internos del computador"
+                              >
+                                 Nota
+                              </a>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                 <a href="https://www.profesionalreview.com/2018/10/30/que-es-un-procesador/#%C2%BFQue_es_un_procesador" target="_blank">Fuente: profesionalreview.com</a>
+                              </div>
+                           </div>
+                           <div class="col-10 col-sm-8 col-lg-6">
+                              <img src="./assets/img/procesador.webp" class="d-block mx-lg-auto img-fluid" alt="Procesador" width="700" height="500" loading="lazy" />
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Perifericos-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 pt-5 justify-content-center">
+                           <div class="col mx-auto">
+                              <h2 class="display-5 fw-bold lh-1 mb-3 text-center">Que Son Los Periféricos</h2>
+                              <p class="lead mb-4 text-justify">
+                                 Son dispositivos externos al ordenador que permiten la comunicación entre las personas y los ordenadores, como la entrada y salida de información desde o hacia el mismo ordenador.
+                              </p>
+                           </div>
+                           <div class="container-fluid">
+                              <div class="border rounded-3 shadow-lg">
+                                 <ul class="nav nav-tabs justify-content-center border-0 border-bottom" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                       <a class="btn btn-primary active my-3" id="home-tab" data-bs-toggle="tab" data-bs-target="#entrada" type="button" role="tab" aria-controls="entrada" aria-selected="true">
+                                          Periféricos De Entrada
+                                       </a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                       <a class="btn btn-primary my-3 mx-2" id="profile-tab" data-bs-toggle="tab" data-bs-target="#salida" type="button" role="tab" aria-controls="salida" aria-selected="false">
+                                          Periféricos De Salida
+                                       </a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                       <a class="btn btn-primary my-3" id="profile-tab" data-bs-toggle="tab" data-bs-target="#mixtos" type="button" role="tab" aria-controls="mixtos" aria-selected="false">Mixtos</a>
+                                    </li>
+                                 </ul>
+                                 <div class="tab-content" id="myTabContent">
+                                    <div class="lead tab-pane show active text-justify p-3" id="entrada" role="tabpanel" aria-labelledby="home-tab">
+                                       <p>
+                                          Son cualquier elemento de hardware que envía datos, es decir, información (textos, números, sonido, gráficos, vídeo, movimiento, calor, tacto, etc.,) a un ordenador. Son esenciales para interactuar
+                                          con él y controlarlo. Estos datos, introducidos por usuarios u otros dispositivos, se captan y digitalizan y se envían al ordenador para ser procesados.
+                                       </p>
+                                    </div>
+                                    <div class="lead tab-pane text-justify p-3" id="salida" role="tabpanel" aria-labelledby="profile-tab">
+                                       <p>
+                                          Son conocidos por recibir los datos desde un ordenador y mostrar al operador las operaciones que se realizan. La mayoría de la información que se proyecta para informar, comunicar, alertar, etc., se
+                                          convierte en legible y fácil de interpretar para cualquier usuario.
+                                       </p>
+                                    </div>
+                                    <div class="lead tab-pane text-justify p-3" id="mixtos" role="tabpanel" aria-labelledby="profile-tab">
+                                       <p>
+                                          Estos dispositivos permiten enviar información a un ordenador (entrada) y recibir datos desde un ordenador (salida). Su función principal se basa en almacenar o guardar, de manera permanente o
+                                          virtual, todo lo que se haga para que otros usuarios o sistemas puedan utilizarlos.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-start my-3">
+                              <a href="https://postgradoindustrial.com/dispositivos-perifericos-que-son-y-como-se-clasifican/" target="_blank">Fuente: postgradoindustrial.com</a>
+                           </div>
+                        </div>
+                        <div class="container-fluid d-flex justify-content-center align-items-center">
+                           <div class="row row-cols-1 row-cols-md-2">
+                              <div class="col my-3 card-group">
+                                 <div class="card card-group bg-dark border shadow-lg rounded-3">
+                                    <img src="./assets/img/mouse.webp" class="card-img-top img-fluid" loading="lazy" alt="Mouse" />
+                                    <div class="card-body">
+                                       <h2 class="card-title">Mouse</h2>
+                                       <p class="card-text lead text-justify">
+                                          Es un dispositivo periférico de entrada, de uso manual, diseñado para facilitar la interacción del usuario con las interfaces de entorno gráfico de numerosos sistemas informáticos. Hoy en día es un
+                                          accesorio popular y tradicional de la computación.
+                                       </p>
+                                       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                          <a href="https://concepto.de/mouse/" target="_blank">Fuente: concepto.de</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col my-3 card-group">
+                                 <div class="card card-group bg-dark border shadow-lg rounded-3">
+                                    <img src="./assets/img/monitor.webp" class="card-img-top img-fluid" alt="Monitor" loading="lazy" />
+                                    <div class="card-body">
+                                       <h2 class="card-title">Monitor</h2>
+                                       <p class="card-text lead text-justify">
+                                          Es un dispositivo cuya función principal es mostrar el video y la información gráfica generada por el adaptador de gráficos de la computadora, lo que permite al usuario interactuar con la
+                                          computadora.
+                                       </p>
+                                       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                          <a href="https://www.cavsi.com/preguntasrespuestas/que-es-un-monitor-o-pantalla/" target="_blank">Fuente: cavsi.com</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col my-3 card-group">
+                                 <div class="card card-group bg-dark border shadow-lg rounded-3">
+                                    <img src="./assets/img/teclado.webp" class="card-img-top img-fluid" alt="Teclado" loading="lazy" />
+                                    <div class="card-body">
+                                       <h2 class="card-title">Teclado</h2>
+                                       <p class="card-text lead text-justify">
+                                          Es un periférico de ingreso o entrada (input) de información. Consiste en un conjunto de teclas de manera horizontal sobre una lámina, donde actúan como palancas mecánicas o interruptores
+                                          electrónicos, permitiendo así el ingreso de información codificada al sistema informático por parte del usuario.
+                                       </p>
+                                       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                          <a href="https://concepto.de/teclado-informatica/" target="_blank">Fuente: concepto.de</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col my-3 card-group">
+                                 <div class="card card-group bg-dark border shadow-lg rounded-3">
+                                    <img src="./assets/img/cornetas.webp" class="card-img-top img-fluid" alt="Cornetas" loading="lazy" />
+                                    <div class="card-body">
+                                       <h2 class="card-title">Corneta</h2>
+                                       <p class="card-text lead text-justify">
+                                          Son dispositivos externos de salida de audio, también conocidos como altavoces o parlantes. Permiten reproducir pistas de música o cualquier tipo de audio desde tu ordenador y escucharlo en las
+                                          bocinas. Son dispositivos periféricos que se han convertido en parte esencial del computador.
+                                       </p>
+                                       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                          <a href="https://www.techspring.mx/bocinas-de-computadora/" target="_blank">Fuente: techspring.mx</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Gpu-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                           <div class="col-10 col-sm-8 col-lg-6">
+                              <img src="./assets/img/gpu.webp" class="d-block mx-lg-auto img-fluid" alt="Gpu" width="700" height="500" loading="lazy" />
+                           </div>
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Qué Es Una GPU</h2>
+                              <p class="lead text-justify">
+                                 Representa precisamente el corazón de una tarjeta gráfica al igual que la CPU lo hace en un PC. Aparte del corazón, también es su cerebro, ya que es la encargada de realizar todos los cálculos complejos que
+                                 nos permiten disfrutar de buenos gráficos en la pantalla y es una pieza hecha de silicio.
+                              </p>
+                              <a
+                                 tabindex="0"
+                                 class="btn btn-primary mb-3"
+                                 role="button"
+                                 data-bs-toggle="popover"
+                                 data-bs-placement="bottom"
+                                 data-bs-trigger="focus"
+                                 title="Aclaracion"
+                                 data-bs-content="La GPU o Unidad de Procesamiento Gráfico no se debe confundir con el CPU Unidad central de Procesamiento, cada uno de los anteriores forma parte de un pieza, el CPU forma parte de la Placa Madre y la GPU forma parte de la memoria grafica, se podria decir que la GPU es la CPU de las targetas graficas."
+                              >
+                                 Nota
+                              </a>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                 <a href="https://hardzone.es/reportajes/que-es/gpu-caracteristicas-especificaciones/" target="_blank">Fuente: hardzone.es</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Otros Componentes-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 ep-flex-lg-row-reverse justify-content-center">
+                           <div class="col">
+                              <h2 class="display-5 fw-bold lh-1 my-5 text-center">Otros Componentes</h2>
+                              <div class="row">
+                                 <div class="col-lg-6 mb-4">
+                                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalimage1" class="hvr-buzz-out">
+                                       <img class="w-100 mb-4 rounded-3 img-fluid border p-3 shadow-lg" src="assets/img/tarjeta-de-sonido.webp" alt="Tarjeta De Sonido" loading="lazy" style="height: 400px;" />
+                                    </a>
+                                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalimage2" class="hvr-buzz-out">
+                                       <img class="w-100 mb-4 rounded-3 img-fluid border p-3 shadow-lg" src="assets/img/cooler.webp" alt="Cooler" loading="lazy" style="height: 400px;" />
+                                    </a>
+                                 </div>
+                                 <div class="col-lg-6 mb-4">
+                                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalimage3" class="hvr-buzz-out">
+                                       <img class="w-100 mb-4 rounded-3 img-fluid border p-3 shadow-lg" src="assets/img/case.webp" alt="Case" loading="lazy" style="height: 400px;" />
+                                    </a>
+                                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalimage4" class="hvr-buzz-out">
+                                       <img class="w-100 mb-4 rounded-3 img-fluid border p-3 shadow-lg" src="assets/img/tarjeta-de-red.webp" alt="Tarjeta De Red" loading="lazy" style="height: 400px;" />
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal fade m-0" id="modalimage1" tabindex="-1" aria-labelledby="modalimage1" aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered modal-me">
+                                 <div class="modal-content bg-dark border shadow-lg rounded-3">
+                                    <div class="modal-header border-0 border-bottom">
+                                       <h2 class="modal-title text-center w-100" id="modalimage1">Qué Es Una Tarjeta De Sonido</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p class="lead text-justify text-light">
+                                          Es una tarjeta de expansión que sirve para la entrada y salida de audio entre la computadora y el exterior por medio de puertos de audio, así como de permitir trabajar con un dispositivo para juegos
+                                          como Joystick, Gamepad ó RaceWheel. La tarjeta de audio se inserta dentro de las ranuras de expansión ó "Slots" integradas en la tarjeta principal ("Motherboard") y se atornilla al gabinete para
+                                          evitar movimientos y por ende fallas. Todas las tarjetas de sonido integran varios puertos para conectar los dispositivos externos tales como bocinas, micrófonos, teclados musicales, etc.
+                                       </p>
+                                       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                          <a href="https://aulavirtual.sld.cu/pluginfile.php/6411/mod_imscp/content/4/tarjeta_de_sonido.html" target="_blank">Fuente: aulavirtual.sld.cu</a>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center border-0">
+                                       <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal fade m-0" id="modalimage2" tabindex="-1" aria-labelledby="modalimage2" aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered modal-me">
+                                 <div class="modal-content bg-dark border shadow-lg rounded-3">
+                                    <div class="modal-header border-0 border-bottom">
+                                       <h2 class="modal-title text-center w-100" id="modalimage2">Qué Es Un Cooler</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p class="lead text-justify text-light">
+                                          Los Cooler que se incluyen en las pc se ocupan de mover el aire caliente y expulsarlo de los componentes, capturando al mismo tiempo aire fresco para renovarlos. Los cooler que están adjuntos a los
+                                          componentes se suelen utilizar en combinación con un disipador de calor para incrementar la zona de superficie caliente en contacto con el aire, proporcionando todo una ayuda a la eficiencia del
+                                          trabajo del cooler.
+                                       </p>
+                                       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                          <a href="https://sites.google.com/site/estructuradelacomputadora/home/componentes-esenciales-de-la-computadora/cooler-ventilador" target="_blank">
+                                             Fuente: sites.google.com
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center border-0">
+                                       <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal fade m-0" id="modalimage3" tabindex="-1" aria-labelledby="modalimage3" aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered modal-me">
+                                 <div class="modal-content bg-dark border shadow-lg rounded-3">
+                                    <div class="modal-header border-0 border-bottom">
+                                       <h2 class="modal-title text-center w-100" id="modalimage3">Qué Es Un Case</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p class="lead text-justify text-light">
+                                          Un chasis, gabinete, caja, carcasa o torre, de computadora, es la estructura metálica, plástica o de cualquier otro material; que agrupa y protege los distintos componentes de una computadora u
+                                          ordenador. Su principal función es alojar y mantener en su interior los distintos dispositivos que permiten el funcionamiento de un equipo de cómputo. Entre los dispositivos más comunes que se
+                                          pueden encontrar dentro de un chasis de computadora, se encuentran; la fuente de alimentación, la placa madre, los dispositivos de almacenamiento, las tarjetas de video y las unidades de discos
+                                          ópticas. Ciertamente, cuando se habla de chasis de computadora, se refiere a los ordenadores de escritorios tradicionales. La carcasa de un ordenador portátil, netbook o tableta también es
+                                          considerada como un chasis.
+                                       </p>
+                                       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                          <a href="https://bighardware.es/que-es-un-chasis-de-computadora/" target="_blank">Fuente: bighardware.es</a>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center border-0">
+                                       <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal fade m-0" id="modalimage4" tabindex="-1" aria-labelledby="modalimage4" aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered modal-me">
+                                 <div class="modal-content bg-dark border shadow-lg rounded-3">
+                                    <div class="modal-header border-0 border-bottom">
+                                       <h2 class="modal-title text-center w-100" id="modalimage4">Qué Es Una Tarjeta De Red</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                       <p class="lead text-justify text-light">
+                                          Son unas tarjetas que suelen ser de tamaño reducido que se incorporan en el interior de los ordenadores para así lograr que nuestro equipo logre conectarse a Internet.Las tarjetas de red se encargan
+                                          de preparar, transferir y controlar la información o datos que envía a los otros equipos que están conectados en una misma red, no se trata de solo ordenadores, también equipos como impresoras y
+                                          discos duros externos pueden establecer una conexión. Básicamente las tarjetas de red se encargan de ser el intermediario entre el conector y nuestro equipo con un dispositivo que permite que
+                                          contemos con Internet. Esto se puede llevar a cabo con conexiones a través de cable o inalámbricamente.
+                                       </p>
+                                       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                          <a href="https://www.info-computer.com/blog/que-es-una-tarjeta-de-red-y-cual-es-su-funcion/untitled.html" target="_blank">Fuente: info-computer.com</a>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center border-0">
+                                       <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!--Mantenimiento Preventivo De Hardware-->
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="mantenimiento-preventivo-de-hardware">
+                  <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                     Mantenimiento Preventivo De Hardware
+                  </button>
+               </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     
+                     <!--Qué Es Un Mantenimiento Preventivo De Hardware-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-center">
+                           <div class="col">
+                              <h2 class="display-5 fw-bold lh-1 mb-5 text-center">Qué Es Un Mantenimiento Preventivo De Hardware</h2>
+                              <img src="./assets/img/hardware1.webp" class="d-block mx-lg-auto img-fluid" alt="Qué Es Un Mantenimiento Preventivo De Hardware" loading="lazy" />
+                           </div>
+                           <p class="lead text-justify">
+                              El mantenimiento preventivo de hardware nos permite tomar acciones estratégicas para anticipar el deterioro de un PC o computador portátil.Esta práctica busca mantener los componentes en estado óptimo todo el
+                              tiempo para alargar su vida útil y evitar fallas en el sistema. <br />
+                              El mantenimiento preventivo consiste en revisión y ajustes de parámetros para poder asegurar que su equipo está calibrado conforme a las especificaciones del fabricante, limpieza interna y externa, ajuste y
+                              lubricación de componentes mecánicos (cuando aplique), detección y ajuste de cualquier aspecto que implique una posible falla potencial.
+                           </p>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-start m-0">
+                              <a href="https://blog.comparasoftware.com/mantenimiento-de-hardware/" target="_blank">Fuente: blog.comparasoftware.com</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Beneficios e Importancia De Un Mantenimiento Preventivo De Hardware-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-center">
+                           <div class="col">
+                              <h2 class="display-5 fw-bold lh-1 mb-5 text-center">Beneficios e Importancia De Un Mantenimiento Preventivo De Hardware</h2>
+                              <img src="./assets/img/hardware.webp" class="d-block mx-lg-auto img-fluid" alt="Beneficios e Importancia De Un Mantenimiento Preventivo De Hardware" width="700" height="500" loading="lazy" />
+                           </div>
+                           <p class="lead text-justify">
+                              El uso constante de los equipos origina desgaste y suciedad de forma parcial o total en cada una de sus partes, así como el desajuste de ciertos parámetros. Aunado, la exposición a la humedad, mala ventilación,
+                              polvo y otros factores externos de uso, aumentan la probabilidad de fallo.
+                              <br />
+                              Por ello, es importante realizar mantenimiento preventivo de forma periódica a los equipos, con el fin de evitar averías y asegurar el buen desempeño de éstos.
+                              <br />
+                              Una de las grandes razones para considerar hacer dichos mantenimientos es que, al ser preventivos, le permite detectar a tiempo problemas futuros, reduciendo reparaciones y costos innecesarios, dado que la
+                              corrección de fallas suele implicar un gasto mayor.
+                           </p>
+                           <div class="container m-0 py-2">
+                              <a href="#sugerencia1" data-bs-toggle="collapse" class="btn btn-primary my-2">Sugerencia</a>
+                              <div id="sugerencia1" class="collapse border rounded m-0 shadow-lg rounded-3">
+                                 <ul class="container">
+                                    <li class="lead text-justify text-light p-2">Se recomienda que dichos mantenimientos se den al menos dos veces al año o más, dependiendo la frecuencia de uso.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-start m-0">
+                              <a href="https://interferenciales.com.mx/blogs/noticias/beneficios-e-importancia-del-mantenimiento-preventivo-a-tus-equipos">Fuente: interferenciales.com.mx</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Ventajas Y Desventajas Del Mantenimiento Preventivo De Hardware-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-center">
+                           <div class="container">
+                              <h2 class="display-5 fw-bold lh-1 mb-5 text-center">Ventajas Del Mantenimiento Preventivo De Hardware</h2>
+                              <ul class="container">
+                                 <li class="lead text-justify text-light p-2">Alarga o prolonga la vida útil del hardware.</li>
+                                 <li class="lead text-justify text-light p-2">Puede detectar fallos.</li>
+                                 <li class="lead text-justify text-light p-2">Puede evitar un mantenimiento correctivo del hardware.</li>
+                                 <li class="lead text-justify text-light p-2">Puede reducir costos de reparación.</li>
+                                 <li class="lead text-justify text-light p-2">Optimiza el funcionamiento del equipo de cómputo.</li>
+                                 <li class="lead text-justify text-light p-2">Evita o diagnostica posibles fallos.</li>
+                              </ul>
+                           </div>
+                           <div class="container">
+                              <h2 class="display-5 fw-bold lh-1 mb-5 text-center">Desventajas Del Mantenimiento Preventivo De Hardware</h2>
+                              <ul class="container">
+                                 <li class="lead text-justify text-light p-2">El paro innecesario del equipo.</li>
+                                 <li class="lead text-justify text-light p-2">No garantiza que el equipo vuelva a fallar.</li>
+                                 <li class="lead text-justify text-light p-2">Si no realizarse de forma correcta puede dañar algún componente del equipo.</li>
+                                 <li class="lead text-justify text-light p-2">Puede no tener un resultado satisfactorio.</li>
+                                 <li class="lead text-justify text-light p-2">Optimiza el funcionamiento del equipo de cómputo.</li>
+                                 <li class="lead text-justify text-light p-2">No puede ser realizado por cualquier persona.</li>
+                              </ul>
+                           </div>
+                           <div class="container m-0 py-2">
+                              <a href="#sugerencia2" data-bs-toggle="collapse" class="btn btn-primary my-2">Sugerencia</a>
+                              <div id="sugerencia2" class="collapse border rounded m-0 shadow-lg rounded-3">
+                                 <ul class="container">
+                                    <li class="lead text-justify text-light p-2">Usar una pulsera antiestática o descargarse antes la estática para evitar quemar algún chip de la placa base.</li>
+                                    <li class="lead text-justify text-light p-2">Hacer el mantenimiento en un lugar limpio y despejado.</li>
+                                    <li class="lead text-justify text-light p-2">Utilizar las herramientas adecuadas para realizar el mantenimiento.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-start m-0">
+                              <a href="https://softwgroup.com.mx/recomendaciones-para-un-mantenimiento-preventivo-hardware-en-tu-pc" target="_blank">Fuente: softwgroup.com.mx</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Herramientas Para Realizar Un Mantenimiento Preventivo De Hardware-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-center">
+                           <div class="container">
+                              <h2 class="display-5 fw-bold lh-1 mb-5 text-center">Herramientas Para Realizar Un Mantenimiento Preventivo De Hardware</h2>
+                              <img src="./assets/img/herramientas.webp" class="d-block mx-lg-auto img-fluid" alt="Herramientas" width="700" height="500" loading="lazy" />
+                              <ul class="container">
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light">Destornilladores:</span> Son útiles cuando se abre el gabinete o se retira cualquier parte del mismo. Preferiblemente deben ser de tamaño pequeño y mediano, y si es posible tener
+                                    una plana y una cruz.
+                                 </li>
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light">Pinza puntiaguda:</span> Lo mejor es utilizar abrazaderas de plástico, que se utilizan para desconectar los componentes internos de la PC.
+                                 </li>
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light">Pequeños contenedores:</span> Estos son necesarios para colocar allí las pequeñas piezas que estamos retirando en el momento del desmontaje. Normalmente son sólo tornillos, pero
+                                    es importante separarlos y si es posible marcar el contenedor con el nombre del lugar al que corresponde, para que en el montaje no perdamos tiempo en averiguar qué tornillos pertenecen a cada lugar.
+                                 </li>
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light">Pulsera antiestática:</span> Esta se utiliza para evitar descargas eléctricas de nuestro cuerpo al ordenador ya que podría dañar algún componente del ordenador. Esto se coloca en
+                                    la muñeca.
+                                 </li>
+                                 <li class="lead text-justify text-light p-2"><span class="text-light">Cepillo o pincel:</span> Se utiliza para eliminar el polvo y la suciedad de algunos elementos.</li>
+                                 <li class="lead text-justify text-light p-2"><span class="text-light">Borrador:</span> Esto se utiliza para limpiar las tarjetas. Es importante que sea suave para que no dañe la tarjeta.</li>
+                                 <li class="lead text-justify text-light p-2"><span class="text-light">Hisopos:</span> Se utilizan para limpiar componentes muy sensibles, como por ejemplo, unidades de almacenamiento.</li>
+                                 <li class="lead text-justify text-light p-2"><span class="text-light">Paños de algodón:</span> Se utilizan para eliminar el polvo o aplicar productos químicos de limpieza.</li>
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light">Soplador:</span> Es un ventilador utilizado para eliminar el polvo de los componentes del PC sin dañarlos. O puede usar una aspiradora pequeña.
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="container">
+                              <div class="p-0 container-fluid d-flex justify-content-center align-items-center">
+                                 <video
+                                    src="./assets/vid/Herramientas-para-el-mantenimiento-preventivo-de-hardware.mp4"
+                                    poster="assets/img/herramientas-para-realizar-un-mantenimiento-preventivo-de-hardware.webp"
+                                    controls
+                                    muted
+                                    class="border ratio shadow-lg ratio-16x9"
+                                 ></video>
+                              </div>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-start m-0">
+                              <a class="m-3" href="https://mantenimiento.win/herramientas-para-el-mantenimiento-correctivo-y-preventivo/" target="_blank">Fuente: mantenimiento.win</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Como Realizar Un Mantenimiento Preventivo De Hardware-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                           <div class="container">
+                              <h2 class="display-5 fw-bold lh-1 mb-5 text-center">Como Realizar Un Mantenimiento Preventivo De Hardware</h2>
+                           </div>
+                        </div>
+                        <div class="row flex-lg-row-reverse align-items-center mb-5 ep-flex-lg-row-reverse">
+                           <div class="col-10 col-sm-8 col-lg-6 justify-content-center d-flex">
+                              <img src="./assets/vid/fan.gif" class="d-block mx-lg-auto img-fluid border shadow-lg rounded-3" alt="Fan" loading="lazy" style="height: 400px; width: 300px;" />
+                           </div>
+                           <div class="col-lg-6 justify-content-center d-flex flex-column">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Limpieza Del Fan</h2>
+                              <p class="lead text-justify">
+                                 Se Extrae los fan de la torre y se limpian inicialmente con aire (sopladora u otro aparato que expulse aire), luego se procede a limpiarlos con una brocha, por último se frotan con mucho cuidado las aspas y
+                                 el marco con un pañito o hisopo de algodón humedecido en alcohol isopropílico, para así remover todo rastro de suciedad en ellos.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="row flex-lg-row-reverse align-items-center mb-5">
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Limpieza Del Disipador</h2>
+                              <p class="lead text-justify">
+                                 Se Procede a separar el disipador del cooler y al extraer el mismo, se procede a limpiar las partículas de polvo con aire (sopladora u otro aparato que expulse aire) apoyándose de un pincel en la zonas
+                                 estrechas y con un brocha en las zonas restantes.
+                              </p>
+                           </div>
+                           <div class="col-10 col-sm-8 col-lg-6 justify-content-center d-flex">
+                              <img src="./assets/vid/cooler.gif" alt="disipador" class="d-block mx-lg-auto img-fluid border shadow-lg rounded-3" style="height: 400px; width: 300px;" />
+                           </div>
+                        </div>
+                        <div class="row flex-lg-row-reverse align-items-center mb-5 ep-flex-lg-row-reverse">
+                           <div class="col-10 col-sm-8 col-lg-6 justify-content-center d-flex">
+                              <img src="./assets/vid/cpu.gif" class="d-block mx-lg-auto img-fluid border shadow-lg rounded-3" alt="Cpu" loading="lazy" style="height: 400px; width: 300px;" />
+                           </div>
+                           <div class="col-lg-6 justify-content-center d-flex flex-column">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Limpieza Del Procesador</h2>
+                              <p class="lead text-justify">
+                                 Se Extrae el cooler del procesador luego con un trapito húmedo con alcohol isopropílico se procede a limpiar la pasta térmica para posteriormente eliminar cualquier rastro con aire (sopladora u otro aparato
+                                 que expulse aire), para luego renovar la pasta térmica.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="row flex-lg-row-reverse align-items-center mb-5">
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Limpieza De La Fuente</h2>
+                              <p class="lead text-justify">
+                                 Se Procede a destapar la fuente desatornillando los tornillo que posea, la misma ya debe estar desconectada de la pc y de la electricidad, para luego limpiar con aire (sopladora u otro aparato que expulse
+                                 aire) las partículas de polvo y una brocha para su posterior desensamble y limpieza del fan.
+                              </p>
+                           </div>
+                           <div class="col-10 col-sm-8 col-lg-6 justify-content-center d-flex">
+                              <img src="./assets/vid/fuente.gif" class="d-block mx-lg-auto img-fluid border shadow-lg rounded-3" alt="fuente" loading="lazy" style="height: 400px; width: 300px;" />
+                           </div>
+                        </div>
+                        <div class="row flex-lg-row-reverse align-items-center mb-5 ep-flex-lg-row-reverse">
+                           <div class="col-10 col-sm-8 col-lg-6 justify-content-center d-flex">
+                              <img src="./assets/vid/ram.gif" class="d-block mx-lg-auto img-fluid border shadow-lg rounded-3" alt="Ram" loading="lazy" style="height: 400px; width: 300px;" />
+                           </div>
+                           <div class="col-lg-6 justify-content-center d-flex flex-column">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Limpieza De La Ram</h2>
+                              <p class="lead text-justify">
+                                 El primer paso es desconectar la memoria ram de la placa madre para luego limpiarla con un borrador verticalmente y retirar los residuos de borrador con aire (sopladora u otro aparato que expulse aire),
+                                 ademas con el mismo aire se limpiaría la ranura de la ram para eliminar los residuos de polvo existentes.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="row flex-lg-row-reverse align-items-center mb-5">
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Limpieza De La Placa Madre y Case</h2>
+                              <p class="lead text-justify">
+                                 Con la sopladora u otro aparato que expulse aire se limpiara cada rincón tanto de la placa madre y del case ayudándose de una brocha o pincel y cepillo para llegar a los lugares mas estrechos. Mientra que en
+                                 el exterior del case se limpiara con un pañito con alcohol isopropílico.
+                              </p>
+                           </div>
+                           <div class="col-10 col-sm-8 col-lg-6 justify-content-center d-flex">
+                              <img src="./assets/vid/placa-case.gif" class="d-block mx-lg-auto img-fluid border shadow-lg rounded-3" alt="Plca y Case" loading="lazy" style="height: 400px; width: 300px;" />
+                           </div>
+                        </div>
+                        <div class="row flex-lg-row-reverse align-items-center mb-5 ep-flex-lg-row-reverse">
+                           <div class="col-10 col-sm-8 col-lg-6 justify-content-center d-flex">
+                              <img src="./assets/vid/mouse.gif" class="d-block mx-lg-auto img-fluid border shadow-lg rounded-3" alt="mouse" loading="lazy" style="height: 400px; width: 300px;" />
+                           </div>
+                           <div class="col-lg-6 justify-content-center d-flex flex-column">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Limpieza Del Mouse</h2>
+                              <p class="lead text-justify">
+                                 Se procede a desarmar el mouse retirando los tornillos, y una vez abierto con ayuda de una brocha se eliminara los restos de polvo acumulado, posteriormente se procede a limpiar con el aire (sopladora u otro
+                                 aparato que expulse aire) la placa del ratón y el scroll con un pañito de algodón con alcohol isopropílico, luego se efectuara su armado nuevamente concluyendo con una limpieza de la zona exterior con
+                                 alcohol isopropílico y un pañito.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="row flex-lg-row-reverse align-items-center mb-5">
+                           <div class="col-lg-6">
+                              <h2 class="display-5 fw-bold lh-1 mb-3">Limpieza Del Teclado</h2>
+                              <p class="lead text-justify">
+                                 Primeramente se ejecuta el desarmado de las teclas del mismo con un destornillador plano, para su posterior limpieza con alcohol para retirar la suciedad, posteriormente se limpiara el espacio que dejaron
+                                 las teclas con aire (sopladora u otro aparato que expulse aire, finalmente se procede su armado.
+                              </p>
+                           </div>
+                           <div class="col-10 col-sm-8 col-lg-6 justify-content-center d-flex">
+                              <img src="./assets/vid/teclado.gif" class="d-block mx-lg-auto img-fluid border shadow-lg rounded-3" alt="Teclado" loading="lazy" style="height: 400px; width: 300px;" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!--Mantenimiento Preventivo De Software-->
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="mantenimiento-preventivo-de-software">
+                  <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                     Mantenimiento Preventivo De Software
+                  </button>
+               </h2>
+               <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     
+                     <!--Qué Es Un Mantenimiento Preventivo De Software-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-center">
+                           <div class="col">
+                              <h2 class="display-5 fw-bold lh-1 mb-5 text-center">Qué Es Un Mantenimiento Preventivo De Software</h2>
+                              <img src="./assets/img/software.webp" class="d-block mx-lg-auto img-fluid" alt="Qué Es Un Mantenimiento Preventivo De Software" width="700" height="500" loading="lazy" />
+                           </div>
+                           <p class="lead text-justify">
+                              La mejor forma de disponer de los equipos informáticos optimizados para un buen funcionamiento, y evitar que se produzcan incidentes o problemas, es realizando un mantenimiento de software. A medida que se
+                              utiliza un ordenador o dispositivo, se instalan y desinstalan aplicaciones, se graban, borran y extrae archivos, y todas las acciones típicas que se realizan al trabajar con ellos, tienden a ralentizarse o a
+                              presentar problemas (errores o incompatibilidades). Aplicando un mantenimiento preventivo de software y hardware se podrá garantizar un correcto funcionamiento de los equipos, minimizando todas estas
+                              situaciones que pueden impedir un uso apropiado de los mismos.
+                              <br />
+                              Cuando hablamos de mantenimiento preventivo de software nos estamos refiriendo a una serie de medidas y acciones que se realizan para mejorar y optimizar el software de un ordenador, facilitando su óptimo
+                              rendimiento. El mantenimiento preventivo de software permite que un ordenador no se ralentice con el tiempo, elimina posibles errores, aumenta la seguridad y evita problemas de incompatibilidades al mantener el
+                              equipo actualizado.
+                           </p>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-start m-0">
+                              <a href="https://www.hostingplus.pe/blog/software-como-realizar-un-mantenimiento-preventivo/" target="_blank">Fuente: www.hostingplus.pe</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Beneficios e Importancia De Un Mantenimiento Preventivo De Software-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-center">
+                           <div class="col">
+                              <h2 class="display-5 fw-bold lh-1 mb-5 text-center">Beneficios e Importancia De Un Mantenimiento Preventivo De Software</h2>
+                              <img src="./assets/img/software2.webp" class="d-block mx-lg-auto img-fluid" alt="Beneficios e Importancia De Un Mantenimiento Preventivo De Software" width="700" height="500" loading="lazy" />
+                           </div>
+                           <p class="lead text-justify">
+                              El mantenimiento del preventivo de software de una pc consiste en fortalecer el sistema informático, comprobar el rendimiento y gestionar posibles mejoras, y su mantenimiento constituye una forma de blindarla.
+                              Un aspecto importante y que facilita el mantenimiento del software es la verificación de sistemas operativos y programas informáticos. La importancia de realizar el mantenimiento del software radica en que los
+                              equipos mejoran en cuanto a operatividad, además que se refuerzan los parámetros de seguridad de los programas informáticos. Un buen mantenimiento de software no solo modifica y corrige, sino que permite que se
+                              conozca el estado y las condiciones de funcionamiento.
+                              <br />
+                              Este tipo de mantenimiento es estratégico, porque se hace para detectar posibles errores en el futuro, además que se maneja con el tiempo de vida útil de los componentes y del sistema lógico. Responde a un tipo
+                              de programación o plan que se realiza en base a información de adquisición e instalación de elementos, programas o drivers, asimismo del monitoreo de los diversos fallos en el software que se puedan presentar
+                              en un determinado tiempo. La ventaja del mantenimiento consiste en lograr proyectar el tiempo de vida de componentes esenciales, lo que garantiza que se corrija a tiempo y evite que se produzca un caos en el
+                              software.
+                           </p>
+                           <div class="container m-0 py-2">
+                              <a href="#sugerencia1" data-bs-toggle="collapse" class="btn btn-primary my-2">Sugerencia</a>
+                              <div id="sugerencia1" class="collapse border rounded-3 m-0 shadow-lg">
+                                 <ul class="container">
+                                    <li class="lead text-justify text-light p-2">
+                                       Se recomienda que dichos mantenimientos preventivo de software se realice al menos cuatro veces al año o más, dependiendo de la frecuencia de uso, para eliminar y actualizar archivos,software, etc.
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-start m-0">
+                              <a href="https://gruposim.eu/blog/la-importancia-de-un-buen-mantenimiento-del-software-de-tu-empresa/">Fuente: gruposim.eu</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!--Cómo Realizar Un Mantenimiento Preventivo De Software-->
+                     <div class="container col-xxl-8 px-4 py-5 bg-dark text-light border shadow-lg my-4 rounded-3">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-center">
+                           <div class="container">
+                              <h2 class="display-5 fw-bold lh-1 mb-5 text-center">Cómo Realizar Un Mantenimiento Preventivo De Software</h2>
+                              <div class="p-0 container-fluid d-flex justify-content-center align-items-center">
+                                 <video src="./assets/vid/Mantenimiento-a-una-Computadora-PC-o-Laptop-(Software)-Cletutoz.mp4" controls muted class="border ratio ratio-16x9 shadow-lg"></video>
+                              </div>
+                              <ul class="container">
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light"> Actualización del Sistema Operativo:</span> Asegúrate siempre de haber descargado e instalado los últimos parches y actualizaciones de servicio para tu sistema operativo,
+                                    especialmente en una PC con Windows. Estas actualizaciones corregirán errores y vulnerabilidades de seguridad.
+                                 </li>
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light">Actualización de controladores:</span> Los drivers o controladores son los programas que se encargan de hacer que los dispositivos conectados a un ordenador funcionen
+                                    correctamente. Es necesario instalar los controladores adecuados para que los dispositivos o periféricos puedan funcionar de forma correcta. Lo recomendado es instalar los últimos controladores que el
+                                    fabricante de cada periférico recomiende.
+                                 </li>
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light">Comprobar y limpiar los discos:</span> Los discos son el lugar donde se guarda la información, por lo que deben tener un trato prioritario durante un mantenimiento preventivo de
+                                    software. Lo mejor es utilizar una herramienta para comprobar el estado del disco, desfragmentación si se trata de discos mecánicos y en general, cualquier acción que mejore su rendimiento.
+                                 </li>
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light">Eliminar software que no se utiliza:</span> Todas aquellas aplicaciones (y sus programas o procesos asociados), que no se utilicen, deben ser desinstaladas para evitar que
+                                    consuman recursos que pueden ser necesarios para otras aplicaciones, o para el propio sistema operativo. En este tipo de mantenimiento se deben eliminar archivos duplicados y eliminar archivos temporales
+                                    que ya no sirven para nada.
+                                 </li>
+                                 <li class="lead text-justify text-light p-2">
+                                    <span class="text-light">Configuración de medidas de seguridad:</span> En un mantenimiento preventivo de hoy en día hay que prestar especial atención a las medidas de seguridad del equipo, debido al uso
+                                    de redes e internet.
+                                    <ul class="container">
+                                       <li class="lead text-justify text-light p-1"><span class="text-light">Firewall:</span> Instalar y configurar un cortafuego que impida accesos no autorizados de terceros.</li>
+                                       <li class="lead text-justify text-light p-1"><span class="text-light">Antimalware:</span> Programas que impiden que el equipo se infecte con malware (virus, gusanos, troyanos, ransomware, etc.).</li>
+                                       <li class="lead text-justify text-light p-1">
+                                          <span class="text-light">Restauración del sistema:</span> Activar y configurar los puntos de restauración del sistema, para poder volver a un estado anterior en caso de algún desastre que impida
+                                          utilizar el equipo.
+                                       </li>
+                                       <li class="lead text-justify text-light p-1">
+                                          <span class="text-light">Copias de seguridad:</span> Implementar un sistema de copias de seguridad, automatizado, periódico, y si es posible, externo al lugar donde se encuentre el equipo (por
+                                          ejemplo, en la nube).
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-start m-0">
+                              <a class="m-3" href="https://www.hostingplus.pe/blog/software-como-realizar-un-mantenimiento-preventivo/" target="_blank">Fuente: hostingplus.pe</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+         <!--Galeria-->
+         <div class="container my-5" id="galeria">
+            <div class="container-fluid rounded-3">
+               <h2 class="h2 text-center text-light mb-4">Galería</h2>
+               <div class="row">
+                  <div class="col-lg-4 mb-4">
+                     <a href="#!" data-bs-toggle="modal" data-bs-target="#image1">
+                        <img class="w-100 mb-4 rounded-3 img-fluid border shadow-lg hvr-grow" src="assets/img/image1.webp" alt="Abriendo Mouse" loading="lazy" />
+                     </a>
+                     <a href="#!" data-bs-toggle="modal" data-bs-target="#image2">
+                        <img class="w-100 mb-4 rounded-3 img-fluid border shadow-lg hvr-grow" src="assets/img/image2.webp" alt="Desconectando Molex" loading="lazy" />
+                     </a>
+                  </div>
+                  <div class="col-lg-4 mb-4">
+                     <a href="#!" data-bs-toggle="modal" data-bs-target="#image3">
+                        <img class="w-100 mb-4 rounded-3 img-fluid border shadow-lg hvr-grow" src="assets/img/image3.webp" alt="Fachada De LA Institucion" loading="lazy" />
+                     </a>
+                     <a href="#!" data-bs-toggle="modal" data-bs-target="#image4">
+                        <img class="w-100 mb-4 rounded-3 img-fluid border shadow-lg hvr-grow" src="assets/img/image4.webp" alt="Polvo Del Disco Duro" loading="lazy" />
+                     </a>
+                  </div>
+                  <div class="col-lg-4 mb-4">
+                     <a href="#!" data-bs-toggle="modal" data-bs-target="#image5">
+                        <img class="w-100 mb-4 rounded-3 img-fluid border shadow-lg hvr-grow" src="assets/img/image5.webp" alt="Desarmando El Fan Extractor" loading="lazy" />
+                     </a>
+                     <a href="#!" data-bs-toggle="modal" data-bs-target="#image6">
+                        <img class="w-100 mb-4 rounded-3 img-fluid border shadow-lg hvr-grow" src="assets/img/image6.webp" alt="Desconectando El ATX De 4 Pines" loading="lazy" />
+                     </a>
+                  </div>
+               </div>
+               <div tabindex="-1" aria-labelledby="image1" aria-hidden="true" class="modal fade" id="image1">
+                  <div class="modal-dialog modal-lg modal-dialog-centered d-flex justify-content-center align-items-center">
+                     <img src="assets/img/image1.webp" alt="" loading="lazy" class="img-fluid border shadow-lg rounded-3" style="max-height: 90vh; max-width: 90vw;" />
+                  </div>
+               </div>
+               <div tabindex="-1" aria-labelledby="image2" aria-hidden="true" class="modal fade" id="image2">
+                  <div class="modal-dialog modal-lg modal-dialog-centered d-flex justify-content-center align-items-center">
+                     <img src="assets/img/image2.webp" alt="" loading="lazy" class="img-fluid border shadow-lg rounded-3" style="max-height: 90vh; max-width: 90vw;" />
+                  </div>
+               </div>
+               <div tabindex="-1" aria-labelledby="image3" aria-hidden="true" class="modal fade" id="image3">
+                  <div class="modal-dialog modal-lg modal-dialog-centered d-flex justify-content-center align-items-center">
+                     <img src="assets/img/image3.webp" alt="" loading="lazy" class="img-fluid border shadow-lg rounded-3" style="max-height: 90vh; max-width: 90vw;" />
+                  </div>
+               </div>
+               <div tabindex="-1" aria-labelledby="image4" aria-hidden="true" class="modal fade" id="image4">
+                  <div class="modal-dialog modal-lg modal-dialog-centered d-flex justify-content-center align-items-center">
+                     <img src="assets/img/image4.webp" alt="" loading="lazy" class="img-fluid border shadow-lg rounded-3" style="max-height: 90vh; max-width: 90vw;" />
+                  </div>
+               </div>
+               <div tabindex="-1" aria-labelledby="image5" aria-hidden="true" class="modal fade" id="image5">
+                  <div class="modal-dialog modal-lg modal-dialog-centered d-flex justify-content-center align-items-center">
+                     <img src="assets/img/image5.webp" alt="" loading="lazy" class="img-fluid border shadow-lg rounded-3" style="max-height: 90vh; max-width: 90vw;" />
+                  </div>
+               </div>
+               <div tabindex="-1" aria-labelledby="image6" aria-hidden="true" class="modal fade" id="image6">
+                  <div class="modal-dialog modal-lg modal-dialog-centered d-flex justify-content-center align-items-center">
+                     <img src="assets/img/image6.webp" alt="" loading="lazy" class="img-fluid border shadow-lg rounded-3" style="max-height: 90vh; max-width: 90vw;" />
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <!--Footer-->
+      <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 bg-dark container-fluid">
+         <a href="index.html" class="col-md-12 d-flex align-items-center justify-content-center link-light text-decoration-none">
+            <img src="./assets/img/logotipo.webp" alt="Logotipo" width="100px" height="50px" class="shadow-lg-lg" />
+         </a>
+         <p class="col-md-12 d-flex align-items-center justify-content-center text-muted mb-0 mt-3">Desarrollada y Diseñada Por Ferenker Sanguino - Jose Salcedo | Zorca Solutions | 2022 ©</p>
+      </footer>
+
+      <!--js-->
+      <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+      <script src="./assets/js/main.js"></script>
+
+   </body>
+
+</html>
